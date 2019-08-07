@@ -53,7 +53,8 @@ client.report.getReports().then(reports => {
 });
 ```
 
-Further information on the client APIs can be found in the API documentation.
+Further information on the client APIs can be found in the
+[API documentation](https://inetsoft-technology.github.io/api-client-js/).
 
 ## Version Compatibility
 
