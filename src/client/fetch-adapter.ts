@@ -57,15 +57,15 @@ export class FetchAdapter implements HttpAdapter<Response> {
    }
 
    public map<T>(response: Promise<Response>): Promise<T> {
-      return response.then((r) => r.json());
+      return response.then(r => r.json());
    }
 
    public mapText(response: Promise<Response>): Promise<string> {
-      return response.then((r) => r.text());
+      return response.then(r => r.text());
    }
 
    public mapBinary(response: Promise<Response>): Promise<ArrayBuffer> {
-      return response.then((r) => r.arrayBuffer());
+      return response.then(r => r.arrayBuffer());
    }
 
    private appendParameters(url: string, params?: { [p: string]: string }): string {

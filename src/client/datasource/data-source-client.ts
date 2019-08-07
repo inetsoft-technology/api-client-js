@@ -37,7 +37,7 @@ export class DataSourceClient extends AbstractClient implements DataSourceApi {
    }
 
    public updateDataSource(name: string, properties: DataSourceProperties): Promise<void> {
-      return this.getId(name).then((id) => {
+      return this.getId(name).then(id => {
          if (id) {
             const url = `api/public/dataSources/${id}`;
             return this.doPut<void>(url, properties);
@@ -48,7 +48,7 @@ export class DataSourceClient extends AbstractClient implements DataSourceApi {
    }
 
    public deleteDataSource(name: string, force: boolean = false): Promise<void> {
-      return this.getId(name).then((id) => {
+      return this.getId(name).then(id => {
          if (id) {
             const url = `api/public/dataSources/${id}`;
             const params = {force: force ? "true" : "false"};
@@ -62,7 +62,7 @@ export class DataSourceClient extends AbstractClient implements DataSourceApi {
    private findDataSource(name: string): Promise<DataSourceProperties | null> {
       const url = "api/public/dataSources";
       const params = { name };
-      return this.doGet<any>(url, params).then((list) => {
+      return this.doGet<any>(url, params).then(list => {
          if (list.dataSources.length === 0) {
             return null;
          }
@@ -72,6 +72,6 @@ export class DataSourceClient extends AbstractClient implements DataSourceApi {
    }
 
    private getId(name: string): Promise<string | null> {
-      return this.findDataSource(name).then((ds) => ds ? ds.id : null);
+      return this.findDataSource(name).then(ds => ds ? ds.id : null);
    }
 }

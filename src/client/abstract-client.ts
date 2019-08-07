@@ -22,41 +22,41 @@ import { HttpAdapter } from "./http-adapter";
 export abstract class AbstractClient {
 
    private get headers(): Promise<{[name: string]: string}> {
-      return this.token().then((t) => ({ "X-Inetsoft-Api-Token": t }));
+      return this.token().then(t => ({ "X-Inetsoft-Api-Token": t }));
    }
 
    protected constructor(private adapter: HttpAdapter<any>, private token: () => Promise<string>,
                          private baseUrl: string) {}
 
    protected doGet<T>(url: string, params?: { [p: string]: string }): Promise<T> {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.map<T>(this.adapter.get(this.getUrl(url), params, h)));
    }
 
    protected doGetBinary(url: string, params?: { [p: string]: string }): Promise<ArrayBuffer> {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.mapBinary(this.adapter.get(this.getUrl(url), params, h)));
    }
 
    protected doPost<T>(url: string, data?: any, params?: { [p: string]: string }): Promise<T> {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.map<T>(this.adapter.post(this.getUrl(url), data, params, h)));
    }
 
    protected doPostBinary(url: string, data?: any,
                           params?: { [p: string]: string }): Promise<ArrayBuffer>
    {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.mapBinary(this.adapter.post(this.getUrl(url), data, params, h)));
    }
 
    protected doPut<T>(url: string, data?: any, params?: { [p: string]: string }): Promise<T> {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.map<T>(this.adapter.put(this.getUrl(url), data, params, h)));
    }
 
    protected doDelete<T>(url: string, params?: { [p: string]: string }): Promise<T> {
-      return this.headers.then((h) =>
+      return this.headers.then(h =>
          this.adapter.map<T>(this.adapter.delete(this.getUrl(url), params, h)));
    }
 

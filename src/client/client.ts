@@ -65,7 +65,7 @@ class TokenProvider {
          response = this.adapter.get(url);
       }
 
-      return this.adapter.map<{token: string}>(response).then((data) => {
+      return this.adapter.map<{token: string}>(response).then(data => {
          this.token = data.token;
          return data.token;
       });

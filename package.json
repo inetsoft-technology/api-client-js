@@ -16,7 +16,7 @@
   "author": "InetSoft Technology <info@inetsoft.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/inetsoft-technology/api-client-js"
   },
   "license": "Apache-2.0",
   "engines": {
@@ -29,8 +29,8 @@
     "start": "rollup -c rollup.config.js -w",
     "test": "jest --coverage",
     "test:watch": "jest --coverage --watch",
-    "test:prod": "npm run lint && npm run test -- --no-cache",
-    "report-coverage": "cat ./coverage/lcov.info | coveralls"
+    "test:prod": "jest --coverage --no-cache",
+    "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "jest": {
     "transform": {
@@ -73,6 +73,7 @@
     "rollup-plugin-node-resolve": "^3.4.0",
     "rollup-plugin-sourcemaps": "^0.4.2",
     "rollup-plugin-typescript2": "^0.22.1",
+    "shelljs": "^0.8.3",
     "ts-jest": "^24.0.2",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",

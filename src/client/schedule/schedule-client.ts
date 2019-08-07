@@ -35,7 +35,7 @@ export class ScheduleClient extends AbstractClient implements ScheduleApi {
 
    public getScheduleTasks(): Promise<ScheduleTask[]> {
       const url = "api/public/schedule";
-      return this.doGet<any>(url).then((list) => list.tasks);
+      return this.doGet<any>(url).then(list => list.tasks);
    }
 
    public addScheduleTask(name: string, enabled: boolean, conditions: ScheduleCondition[],
@@ -63,7 +63,7 @@ export class ScheduleClient extends AbstractClient implements ScheduleApi {
 
    public getTaskConditions(name: string): Promise<ScheduleCondition[]> {
       const url = `api/public/schedule/${name}/conditions`;
-      return this.doGet<any>(url).then((list) => list.conditions);
+      return this.doGet<any>(url).then(list => list.conditions);
    }
 
    public addTaskCondition(name: string, condition: ScheduleCondition): Promise<void> {
@@ -90,7 +90,7 @@ export class ScheduleClient extends AbstractClient implements ScheduleApi {
 
    public getTaskActions(name: string): Promise<ScheduleAction[]> {
       const url = `api/public/schedule/${name}/actions`;
-      return this.doGet<any>(url).then((list) => list.actions);
+      return this.doGet<any>(url).then(list => list.actions);
    }
 
    public addTaskAction(name: string, action: ScheduleAction): Promise<void> {
