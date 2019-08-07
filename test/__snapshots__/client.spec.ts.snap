@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ApiClientImpl when createApiClient() is called with credentials then authentication is performed 1`] = `
+Object {
+  "password": "admin",
+  "username": "admin",
+}
+`;
+
+exports[`ApiClientImpl when createApiClient() is called with credentials then authentication is performed 2`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`ApiClientImpl when createApiClient() is called without an adapter then the fetch adapter is used by default 1`] = `
+Array [
+  "printer1",
+  "printer2",
+  "printer3",
+]
+`;
+
+exports[`ApiClientImpl when createApiClient() is called without credentials then authentication is performed 1`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`ApiClientImpl when the adapter is invoked multiple times then the cached token is used 1`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`ApiClientImpl when the adapter is invoked multiple times then the cached token is used 2`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;

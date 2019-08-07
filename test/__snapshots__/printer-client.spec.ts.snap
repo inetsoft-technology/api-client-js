@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PrinterClient when getPrinters() is called then a list of printers is returned 1`] = `
+Array [
+  "printer1",
+  "printer2",
+  "printer 3",
+]
+`;

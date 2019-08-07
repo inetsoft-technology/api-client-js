@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FileClient when convertLibrary() is called with extract set to false then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": false,
+}
+`;
+
+exports[`FileClient when convertLibrary() is called with extract set to true then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": true,
+}
+`;
+
+exports[`FileClient when convertStorage(false, false) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": false,
+  "overwrite": false,
+}
+`;
+
+exports[`FileClient when convertStorage(false, true) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": false,
+  "overwrite": true,
+}
+`;
+
+exports[`FileClient when convertStorage(true, false) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": true,
+  "overwrite": false,
+}
+`;
+
+exports[`FileClient when convertStorage(true, true) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "extract": true,
+  "overwrite": true,
+}
+`;
+
+exports[`FileClient when copyDataSpace(false, false) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "download": false,
+  "overwrite": false,
+}
+`;
+
+exports[`FileClient when copyDataSpace(false, true) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "download": false,
+  "overwrite": true,
+}
+`;
+
+exports[`FileClient when copyDataSpace(true, false) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "download": true,
+  "overwrite": false,
+}
+`;
+
+exports[`FileClient when copyDataSpace(true, true) is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "download": true,
+  "overwrite": true,
+}
+`;
+
+exports[`FileClient when exportAssets() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "excludes": Array [
+    "e1",
+    "e2",
+  ],
+  "includes": Array [
+    "i1",
+    "i2",
+  ],
+  "name": "assets",
+}
+`;
+
+exports[`FileClient when importAssets() is called with overwrite set to false then the adapter is called with the correct arguments 1`] = `
+Object {
+  "data": "AQAAAAIAAAADAAAABAAAAA==",
+  "excluded": Array [
+    "a1",
+    "a2",
+  ],
+  "overwrite": false,
+}
+`;
+
+exports[`FileClient when importAssets() is called with overwrite set to true then the adapter is called with the correct arguments 1`] = `
+Object {
+  "data": "AQAAAAIAAAADAAAABAAAAA==",
+  "excluded": Array [
+    "a1",
+    "a2",
+  ],
+  "overwrite": true,
+}
+`;

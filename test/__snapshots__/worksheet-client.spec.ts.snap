@@ -1,0 +1,369 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WorksheetClient when getOpenedWorksheet() is called then the opened worksheet is returned 1`] = `
+Object {
+  "asset": "1^2^__NULL__^Examples/Call Center Monitoring",
+  "global": true,
+  "identifier": "id1",
+  "label": "Call Center Monitoring",
+  "path": "Examples/Call Center Monitoring",
+}
+`;
+
+exports[`WorksheetClient when getOpenedWorksheets() is called then a list of sheets is returned 1`] = `
+Array [
+  Object {
+    "asset": "1^2^__NULL__^Examples/Call Center Monitoring",
+    "global": true,
+    "identifier": "id1",
+    "label": "Call Center Monitoring",
+    "path": "Examples/Call Center Monitoring",
+  },
+  Object {
+    "asset": "1^2^__NULL__^Examples/Hurricane",
+    "global": true,
+    "identifier": "id2",
+    "label": "Hurricane",
+    "path": "Examples/Hurricane",
+  },
+]
+`;
+
+exports[`WorksheetClient when getWorksheetData() is called then the adapter is called with the correct arguments and the data is returned 1`] = `
+Object {
+  "colCount": 8,
+  "colIdentifiers": Array [
+    "name",
+    "type",
+    "year",
+    "day",
+    "datetime",
+    "latitude",
+    "longitude",
+    "wind",
+  ],
+  "colTypes": Array [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  "headerColCount": 0,
+  "headerRowCount": 1,
+  "rowCount": 10,
+  "rows": Array [
+    Object {
+      "values": Array [
+        "name",
+        "type",
+        "year",
+        "day",
+        "datetime",
+        "latitude",
+        "longitude",
+        "wind",
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        605,
+        198606050000,
+        26.2,
+        -75.8,
+        30,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        605,
+        198606050600,
+        27.4,
+        -76,
+        30,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        605,
+        198606051200,
+        28.4,
+        -76.4,
+        30,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        605,
+        198606051800,
+        29.1,
+        -77,
+        30,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        606,
+        198606060000,
+        29.7,
+        -77.5,
+        35,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        606,
+        198606060600,
+        30.2,
+        -77.8,
+        40,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        606,
+        198606061200.00003,
+        30.7,
+        -78,
+        45,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        606,
+        198606061800.00003,
+        31.4,
+        -77.9,
+        45,
+      ],
+    },
+    Object {
+      "values": Array [
+        "ANDREW-1986",
+        "NAMED",
+        1986,
+        607,
+        198606070000,
+        31.9,
+        -77.8,
+        45,
+      ],
+    },
+  ],
+  "trailerColCount": 0,
+  "trailerRowCount": 0,
+}
+`;
+
+exports[`WorksheetClient when getWorksheetData() is called then the adapter is called with the correct arguments and the data is returned 2`] = `
+Object {
+  "from": "0",
+  "rows": "10",
+}
+`;
+
+exports[`WorksheetClient when getWorksheetMetadata() is called then a table containing the column metadata is returned 1`] = `
+Object {
+  "colCount": 24,
+  "colIdentifiers": Array [
+    "Annual Trends.Year",
+    "Regions.Code",
+    "Regions.Region",
+    "RawData.State",
+    "RawData.RegionCode",
+    "RawData.DivisionCode",
+    "RawData.Land Area",
+    "RawData.Degree Pct",
+    "RawData.Home Owner Rate",
+    "RawData.Travel Time",
+    "RawData.Housing units",
+    "RawData.Households",
+    "RawData.Poverty Rate",
+    "Divisions.Code",
+    "Divisions.Division",
+    "RawData.Population0",
+    "RawData.Median Income0",
+    "RawData.Property Value0",
+    "Annual Trends.Decr1",
+    "Annual Trends.Incr1",
+    null,
+    null,
+    "RawData.Federal spending",
+    null,
+  ],
+  "colTypes": Array [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+  ],
+  "headerColCount": 0,
+  "headerRowCount": 1,
+  "rowCount": 2,
+  "rows": Array [
+    Object {
+      "values": Array [
+        "Year",
+        "Code",
+        "Region",
+        "State",
+        "RegionCode",
+        "DivisionCode",
+        "Land Area",
+        "Degree Pct",
+        "Home Owner Rate",
+        "Travel Time",
+        "Housing units",
+        "Households",
+        "Poverty Rate",
+        "Code_1",
+        "Division",
+        "Population0",
+        "Median Income0",
+        "Property Value0",
+        "Decr1",
+        "Incr1",
+        "Population",
+        "Median Income",
+        "Federal spending",
+        "Property Value",
+      ],
+    },
+    Object {
+      "values": Array [
+        999.99,
+        999,
+        "XXXXXX",
+        "XXXXX",
+        999,
+        999,
+        999,
+        999.99,
+        999.99,
+        999.99,
+        999,
+        999,
+        999.99,
+        999,
+        "XXXXXXXX",
+        999,
+        999,
+        999,
+        "XXXXX",
+        999.99,
+        999,
+        999.99,
+        999,
+        999.99,
+      ],
+    },
+  ],
+  "trailerColCount": 0,
+  "trailerRowCount": 0,
+}
+`;
+
+exports[`WorksheetClient when getWorksheetParameters() is called then a list of parameters is returned 1`] = `
+Array [
+  Object {
+    "name": "startCounter",
+    "type": "integer",
+  },
+]
+`;
+
+exports[`WorksheetClient when getWorksheets() is called then a list of sheets is returned 1`] = `
+Array [
+  Object {
+    "asset": "1^2^__NULL__^Examples/Census Data",
+    "global": true,
+    "label": "Census Data",
+    "path": "Examples/Census Data",
+  },
+  Object {
+    "asset": "1^2^__NULL__^Examples/Hurricane",
+    "global": true,
+    "label": "Hurricane",
+    "path": "Examples/Hurricane",
+  },
+  Object {
+    "asset": "1^2^__NULL__^Examples/Sales Revenue",
+    "global": true,
+    "label": "Sales Revenue",
+    "path": "Examples/Sales Revenue",
+  },
+  Object {
+    "asset": "1^2^__NULL__^Examples/Call Center Monitoring",
+    "global": true,
+    "label": "Call Center Monitoring",
+    "path": "Examples/Call Center Monitoring",
+  },
+]
+`;
+
+exports[`WorksheetClient when openWorksheet() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "asset": "1^2^__NULL__^Examples/Call Center Monitoring",
+  "global": true,
+  "identifier": "id1",
+  "label": "Call Center Monitoring",
+  "path": "Examples/Call Center Monitoring",
+}
+`;
+
+exports[`WorksheetClient when openWorksheet() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "asset": "1^2^__NULL__^Call Center Monitoring",
+  "parameters": Object {
+    "p1": "v1",
+    "p2": "v2",
+  },
+}
+`;

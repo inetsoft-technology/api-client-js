@@ -1,0 +1,427 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ScheduleClient when addScheduleTask() is called as disabled then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "actions": Array [
+    Object {
+      "actionType": "report",
+      "csv": "/tmp/test/csv",
+      "emails": Array [
+        "joe@example.com",
+        "sue@example.com",
+      ],
+      "format": "PDF",
+      "htmlMessage": false,
+      "locale": "en_US",
+      "message": "See the attached report.",
+      "notifies": Array [
+        "mark@example.com",
+      ],
+      "parameters": Object {
+        "param1": "value",
+        "param2": 1,
+      },
+      "pdf": "/tmp/test.pdf",
+      "printers": Array [
+        "Test Printer",
+      ],
+      "report": "folder/report1",
+      "sender": "ann@example.com",
+      "subject": "Test Email",
+    },
+    Object {
+      "actionType": "viewsheet",
+      "bookmarkName": "My Bookmark",
+      "bookmarkType": "private",
+      "bookmarkUser": "admin",
+      "emails": Array [
+        "joe@example.com",
+        "sue@example.com",
+      ],
+      "format": "POWERPOINT",
+      "htmlMessage": true,
+      "message": "<p>See the attached dashboard</p>",
+      "notifies": Array [
+        "mark@example.com",
+      ],
+      "sender": "ann@example.com",
+      "subject": "Test Email",
+    },
+  ],
+  "conditions": Array [
+    Object {
+      "conditionType": "time",
+      "date": null,
+      "dayOfWeek": -1,
+      "hour": 12,
+      "minute": 0,
+      "second": 0,
+      "timeRange": null,
+      "type": "EVERY_DAY",
+      "weekOfMonth": -1,
+      "weekOfYear": -1,
+    },
+    Object {
+      "conditionType": "completion",
+      "task": "anonymous:Task1",
+    },
+  ],
+  "enabled": false,
+  "name": "anonymous:Task1",
+}
+`;
+
+exports[`ScheduleClient when addScheduleTask() is called as enabled then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "actions": Array [
+    Object {
+      "actionType": "report",
+      "csv": "/tmp/test/csv",
+      "emails": Array [
+        "joe@example.com",
+        "sue@example.com",
+      ],
+      "format": "PDF",
+      "htmlMessage": false,
+      "locale": "en_US",
+      "message": "See the attached report.",
+      "notifies": Array [
+        "mark@example.com",
+      ],
+      "parameters": Object {
+        "param1": "value",
+        "param2": 1,
+      },
+      "pdf": "/tmp/test.pdf",
+      "printers": Array [
+        "Test Printer",
+      ],
+      "report": "folder/report1",
+      "sender": "ann@example.com",
+      "subject": "Test Email",
+    },
+    Object {
+      "actionType": "viewsheet",
+      "bookmarkName": "My Bookmark",
+      "bookmarkType": "private",
+      "bookmarkUser": "admin",
+      "emails": Array [
+        "joe@example.com",
+        "sue@example.com",
+      ],
+      "format": "POWERPOINT",
+      "htmlMessage": true,
+      "message": "<p>See the attached dashboard</p>",
+      "notifies": Array [
+        "mark@example.com",
+      ],
+      "sender": "ann@example.com",
+      "subject": "Test Email",
+    },
+  ],
+  "conditions": Array [
+    Object {
+      "conditionType": "time",
+      "date": null,
+      "dayOfWeek": -1,
+      "hour": 12,
+      "minute": 0,
+      "second": 0,
+      "timeRange": null,
+      "type": "EVERY_DAY",
+      "weekOfMonth": -1,
+      "weekOfYear": -1,
+    },
+    Object {
+      "conditionType": "completion",
+      "task": "anonymous:Task1",
+    },
+  ],
+  "enabled": true,
+  "name": "anonymous:Task1",
+}
+`;
+
+exports[`ScheduleClient when addTaskAction() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "actionType": "report",
+  "csv": "/tmp/test/csv",
+  "emails": Array [
+    "joe@example.com",
+    "sue@example.com",
+  ],
+  "format": "PDF",
+  "htmlMessage": false,
+  "locale": "en_US",
+  "message": "See the attached report.",
+  "notifies": Array [
+    "mark@example.com",
+  ],
+  "parameters": Object {
+    "param1": "value",
+    "param2": 1,
+  },
+  "pdf": "/tmp/test.pdf",
+  "printers": Array [
+    "Test Printer",
+  ],
+  "report": "folder/report1",
+  "sender": "ann@example.com",
+  "subject": "Test Email",
+}
+`;
+
+exports[`ScheduleClient when addTaskCondition() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "conditionType": "time",
+  "date": null,
+  "dayOfWeek": -1,
+  "hour": 12,
+  "minute": 0,
+  "second": 0,
+  "timeRange": null,
+  "type": "EVERY_DAY",
+  "weekOfMonth": -1,
+  "weekOfYear": -1,
+}
+`;
+
+exports[`ScheduleClient when getScheduleTask() is called then the task should be returned 1`] = `
+Object {
+  "enabled": true,
+  "name": "anonymous:Task1",
+  "owner": "anonymous",
+  "status": Object {
+    "lastRunEnd": "2019-06-01 12:00:01Z",
+    "lastRunStart": "2019-06-01 12:00:00Z",
+    "lastRunStatus": "success",
+    "nextRunStart": "2019-06-02 12:00:00Z",
+    "nextRunStatus": "pending",
+    "task": "anonymous:Task1",
+  },
+}
+`;
+
+exports[`ScheduleClient when getScheduleTasks() is called then the list of tasks should be returned 1`] = `
+Array [
+  Object {
+    "enabled": true,
+    "name": "anonymous:Task1",
+    "owner": "anonymous",
+    "status": Object {
+      "lastRunEnd": "2019-06-01 12:00:01Z",
+      "lastRunStart": "2019-06-01 12:00:00Z",
+      "lastRunStatus": "success",
+      "nextRunStart": "2019-06-02 12:00:00Z",
+      "nextRunStatus": "pending",
+      "task": "anonymous:Task1",
+    },
+  },
+  Object {
+    "enabled": true,
+    "name": "admin:Task2",
+    "owner": "admin",
+    "status": Object {
+      "error": "[stack trace]",
+      "lastRunEnd": "2019-06-01 13:00:01Z",
+      "lastRunStart": "2019-06-01 13:00:00Z",
+      "lastRunStatus": "failed",
+      "message": "The task failed due to a problem.",
+      "nextRunStart": "2019-06-02 13:00:00Z",
+      "nextRunStatus": "pending",
+      "task": "admin:Task2",
+    },
+  },
+]
+`;
+
+exports[`ScheduleClient when getTaskAction() is called then the action should be returned 1`] = `
+Object {
+  "actionType": "report",
+  "csv": "/tmp/test/csv",
+  "emails": Array [
+    "joe@example.com",
+    "sue@example.com",
+  ],
+  "format": "PDF",
+  "htmlMessage": false,
+  "locale": "en_US",
+  "message": "See the attached report.",
+  "notifies": Array [
+    "mark@example.com",
+  ],
+  "parameters": Object {
+    "param1": "value",
+    "param2": 1,
+  },
+  "pdf": "/tmp/test.pdf",
+  "printers": Array [
+    "Test Printer",
+  ],
+  "report": "folder/report1",
+  "sender": "ann@example.com",
+  "subject": "Test Email",
+}
+`;
+
+exports[`ScheduleClient when getTaskActions() is called then the list of actions should be returned 1`] = `
+Array [
+  Object {
+    "actionType": "report",
+    "csv": "/tmp/test/csv",
+    "emails": Array [
+      "joe@example.com",
+      "sue@example.com",
+    ],
+    "format": "PDF",
+    "htmlMessage": false,
+    "locale": "en_US",
+    "message": "See the attached report.",
+    "notifies": Array [
+      "mark@example.com",
+    ],
+    "parameters": Object {
+      "param1": "value",
+      "param2": 1,
+    },
+    "pdf": "/tmp/test.pdf",
+    "printers": Array [
+      "Test Printer",
+    ],
+    "report": "folder/report1",
+    "sender": "ann@example.com",
+    "subject": "Test Email",
+  },
+  Object {
+    "actionType": "viewsheet",
+    "bookmarkName": "My Bookmark",
+    "bookmarkType": "private",
+    "bookmarkUser": "admin",
+    "emails": Array [
+      "joe@example.com",
+      "sue@example.com",
+    ],
+    "format": "POWERPOINT",
+    "htmlMessage": true,
+    "message": "<p>See the attached dashboard</p>",
+    "notifies": Array [
+      "mark@example.com",
+    ],
+    "sender": "ann@example.com",
+    "subject": "Test Email",
+  },
+]
+`;
+
+exports[`ScheduleClient when getTaskCondition() is called then the condition should be returned 1`] = `
+Object {
+  "conditionType": "time",
+  "date": null,
+  "dayOfWeek": -1,
+  "hour": 12,
+  "minute": 0,
+  "second": 0,
+  "timeRange": null,
+  "type": "EVERY_DAY",
+  "weekOfMonth": -1,
+  "weekOfYear": -1,
+}
+`;
+
+exports[`ScheduleClient when getTaskConditions() is called then the list of conditions should be returned 1`] = `
+Array [
+  Object {
+    "conditionType": "time",
+    "date": null,
+    "dayOfWeek": -1,
+    "hour": 12,
+    "minute": 0,
+    "second": 0,
+    "timeRange": null,
+    "type": "EVERY_DAY",
+    "weekOfMonth": -1,
+    "weekOfYear": -1,
+  },
+  Object {
+    "conditionType": "completion",
+    "task": "anonymous:Task1",
+  },
+]
+`;
+
+exports[`ScheduleClient when getTaskStatus() is called then the status should be returned 1`] = `
+Object {
+  "lastRunEnd": "2019-06-01 12:00:01Z",
+  "lastRunStart": "2019-06-01 12:00:00Z",
+  "lastRunStatus": "success",
+  "nextRunStart": "2019-06-02 12:00:00Z",
+  "nextRunStatus": "pending",
+  "task": "anonymous:Task1",
+}
+`;
+
+exports[`ScheduleClient when runTask() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "name": "anonymous:Task1",
+}
+`;
+
+exports[`ScheduleClient when updateScheduleTask() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "enabled": true,
+  "name": "anonymous:Task1",
+  "owner": "anonymous",
+  "status": Object {
+    "lastRunEnd": "2019-06-01 12:00:01Z",
+    "lastRunStart": "2019-06-01 12:00:00Z",
+    "lastRunStatus": "success",
+    "nextRunStart": "2019-06-02 12:00:00Z",
+    "nextRunStatus": "pending",
+    "task": "anonymous:Task1",
+  },
+}
+`;
+
+exports[`ScheduleClient when updateTaskAction() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "actionType": "report",
+  "csv": "/tmp/test/csv",
+  "emails": Array [
+    "joe@example.com",
+    "sue@example.com",
+  ],
+  "format": "PDF",
+  "htmlMessage": false,
+  "locale": "en_US",
+  "message": "See the attached report.",
+  "notifies": Array [
+    "mark@example.com",
+  ],
+  "parameters": Object {
+    "param1": "value",
+    "param2": 1,
+  },
+  "pdf": "/tmp/test.pdf",
+  "printers": Array [
+    "Test Printer",
+  ],
+  "report": "folder/report1",
+  "sender": "ann@example.com",
+  "subject": "Test Email",
+}
+`;
+
+exports[`ScheduleClient when updateTaskCondition() is called then the adapter should be called with the correct arguments 1`] = `
+Object {
+  "conditionType": "time",
+  "date": null,
+  "dayOfWeek": -1,
+  "hour": 12,
+  "minute": 0,
+  "second": 0,
+  "timeRange": null,
+  "type": "EVERY_DAY",
+  "weekOfMonth": -1,
+  "weekOfYear": -1,
+}
+`;

@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ServerClient when getUsageHistory() is called the a list of server usage structures is returned 1`] = `
+Array [
+  Object {
+    "cpuUsage": 50.8,
+    "executingQueries": 10,
+    "executingReports": 5,
+    "executingViewsheets": 4,
+    "gcCount": 1,
+    "gcTime": 250,
+    "host": "localhost",
+    "memoryUsage": 104857600,
+    "timestamp": "2019-07-26T09:00:00Z",
+  },
+  Object {
+    "cpuUsage": 25.2,
+    "executingQueries": 4,
+    "executingReports": 1,
+    "executingViewsheets": 2,
+    "gcCount": 1,
+    "gcTime": 200,
+    "host": "localhost",
+    "memoryUsage": 104857610,
+    "timestamp": "2019-07-26T09:00:01Z",
+  },
+]
+`;

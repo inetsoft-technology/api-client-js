@@ -1,0 +1,129 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AbstractClient when doDelete() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "mapped": Object {
+    "result": "value",
+  },
+}
+`;
+
+exports[`AbstractClient when doDelete() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doDelete() is called then the adapter is called with the correct arguments 3`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`AbstractClient when doGet() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "mapped": Object {
+    "result": "value",
+  },
+}
+`;
+
+exports[`AbstractClient when doGet() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doGet() is called then the adapter is called with the correct arguments 3`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`AbstractClient when doGetBinary() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doGetBinary() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`AbstractClient when doPost() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "mapped": Object {
+    "result": "value",
+  },
+}
+`;
+
+exports[`AbstractClient when doPost() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "query": "value",
+}
+`;
+
+exports[`AbstractClient when doPost() is called then the adapter is called with the correct arguments 3`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doPost() is called then the adapter is called with the correct arguments 4`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`AbstractClient when doPostBinary() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "query": "value",
+}
+`;
+
+exports[`AbstractClient when doPostBinary() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doPostBinary() is called then the adapter is called with the correct arguments 3`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;
+
+exports[`AbstractClient when doPut() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "mapped": Object {
+    "result": "value",
+  },
+}
+`;
+
+exports[`AbstractClient when doPut() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "query": "value",
+}
+`;
+
+exports[`AbstractClient when doPut() is called then the adapter is called with the correct arguments 3`] = `
+Object {
+  "p1": "v1",
+  "p2": "v2",
+}
+`;
+
+exports[`AbstractClient when doPut() is called then the adapter is called with the correct arguments 4`] = `
+Object {
+  "X-Inetsoft-Api-Token": "secret",
+}
+`;

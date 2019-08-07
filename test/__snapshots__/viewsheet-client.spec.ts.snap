@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ViewsheetClient when getOpenedViewsheet() is called then the opened viewsheet is returned 1`] = `
+Object {
+  "asset": "1^128^__NULL__^Examples/Census",
+  "global": true,
+  "identifier": "id1",
+  "label": "Census",
+  "path": "Examples/Census",
+}
+`;
+
+exports[`ViewsheetClient when getOpenedViewsheets() is called then a list of sheets is returned 1`] = `
+Array [
+  Object {
+    "asset": "1^128^__NULL__^Examples/Census",
+    "global": true,
+    "identifier": "id1",
+    "label": "Census",
+    "path": "Examples/Census",
+  },
+  Object {
+    "asset": "1^128^__NULL__^Examples/Hurricanes",
+    "global": true,
+    "identifier": "id2",
+    "label": "Hurricanes",
+    "path": "Examples/Hurricanes",
+  },
+]
+`;
+
+exports[`ViewsheetClient when getViewsheets() is called then a list of sheets is returned 1`] = `
+Array [
+  Object {
+    "asset": "1^128^__NULL__^Examples/Census",
+    "global": true,
+    "label": "Census",
+    "path": "Examples/Census",
+  },
+  Object {
+    "asset": "1^128^__NULL__^Examples/Hurricanes",
+    "global": true,
+    "label": "Hurricanes",
+    "path": "Examples/Hurricanes",
+  },
+  Object {
+    "asset": "1^128^__NULL__^Examples/Sales Summary",
+    "global": true,
+    "label": "Sales Summary",
+    "path": "Examples/Sales Summary",
+  },
+]
+`;
+
+exports[`ViewsheetClient when mailViewsheet() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "format": "PDF",
+  "message": "This is a test email.",
+  "recipients": Array [
+    "joe@example.com",
+    "sue@example.com",
+  ],
+  "sender": "ann@example.com",
+  "subject": "Test Mail",
+}
+`;
+
+exports[`ViewsheetClient when openViewsheet() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "asset": "1^128^__NULL__^Examples/Census",
+  "global": true,
+  "identifier": "id1",
+  "label": "Census",
+  "path": "Examples/Census",
+}
+`;
+
+exports[`ViewsheetClient when openViewsheet() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "asset": "1^128^__NULL__^Census",
+  "parameters": Object {
+    "p1": "v1",
+    "p2": "v2",
+  },
+}
+`;

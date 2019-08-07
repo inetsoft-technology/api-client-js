@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatabaseClient when getDatabase() is called then the database properties are returned 1`] = `
+Object {
+  "driver": "com.mysql.jdbc.Driver",
+  "isolationLevel": "READ COMMITTED",
+  "password": "password",
+  "requireLogin": true,
+  "status": "connected",
+  "type": "MYSQL",
+  "url": "jdbc:mysql://localhost:3306/inetsoft",
+  "userName": "root",
+}
+`;
+
+exports[`DatabaseClient when setDatabase() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "driver": "com.mysql.jdbc.Driver",
+  "isolationLevel": "READ COMMITTED",
+  "password": "password",
+  "requireLogin": true,
+  "status": "connected",
+  "type": "MYSQL",
+  "url": "jdbc:mysql://localhost:3306/inetsoft",
+  "userName": "root",
+}
+`;
+
+exports[`DatabaseClient when setDatabase() is called then the adapter is called with the correct arguments 2`] = `
+Object {
+  "driver": "com.mysql.jdbc.Driver",
+  "isolationLevel": "READ COMMITTED",
+  "password": "password",
+  "requireLogin": true,
+  "status": "connected",
+  "type": "MYSQL",
+  "url": "jdbc:mysql://localhost:3306/inetsoft",
+  "userName": "root",
+}
+`;

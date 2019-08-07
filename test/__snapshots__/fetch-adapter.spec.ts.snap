@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FetchAdapter when delete() is called fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when delete() is called fetch is called with the correct arguments 2`] = `
+Object {
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "DELETE",
+}
+`;
+
+exports[`FetchAdapter when get() is called fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when get() is called fetch is called with the correct arguments 2`] = `
+Object {
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "GET",
+}
+`;
+
+exports[`FetchAdapter when get() is called with empty parameters fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when get() is called with empty parameters fetch is called with the correct arguments 2`] = `
+Object {
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "GET",
+}
+`;
+
+exports[`FetchAdapter when get() is called with no parameters fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when get() is called with no parameters fetch is called with the correct arguments 2`] = `
+Object {
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "GET",
+}
+`;
+
+exports[`FetchAdapter when map() is called the promise is resolved to the response JSON body 1`] = `
+Object {
+  "result": "value",
+}
+`;
+
+exports[`FetchAdapter when post() is called fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when post() is called fetch is called with the correct arguments 2`] = `
+Object {
+  "body": "{\\"query\\":\\"value\\"}",
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "POST",
+}
+`;
+
+exports[`FetchAdapter when put() is called fetch is called with the correct arguments 1`] = `
+Object {
+  "status": 200,
+}
+`;
+
+exports[`FetchAdapter when put() is called fetch is called with the correct arguments 2`] = `
+Object {
+  "body": "{\\"query\\":\\"value\\"}",
+  "headers": Object {
+    "X-Inetsoft-Token": "secret",
+  },
+  "method": "PUT",
+}
+`;

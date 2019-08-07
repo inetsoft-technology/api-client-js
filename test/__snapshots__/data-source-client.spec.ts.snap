@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataSourceClient when deleteDataSource() is called with a valid name, the force parameter, and succeeds then the promise is resolved 1`] = `
+Object {
+  "force": "true",
+}
+`;
+
+exports[`DataSourceClient when getDataSource() is called with a valid name then a data source is returned 1`] = `
+Object {
+  "defaultDatabase": "PUBLIC",
+  "driver": "com.example.Driver",
+  "id": "ds1",
+  "name": "Data source 1",
+  "password": "secret",
+  "requireLogin": true,
+  "type": "jdbc",
+  "url": "jdbc:test:ds1",
+  "user": "sa",
+}
+`;
+
+exports[`DataSourceClient when getDataSources() is called then a list of data sources is returned 1`] = `
+Array [
+  Object {
+    "defaultDatabase": "PUBLIC",
+    "driver": "com.example.Driver",
+    "id": "ds1",
+    "name": "Data source 1",
+    "password": "secret",
+    "requireLogin": true,
+    "type": "jdbc",
+    "url": "jdbc:test:ds1",
+    "user": "sa",
+  },
+  Object {
+    "id": "ds2",
+    "method": "get",
+    "name": "Data source 2",
+    "type": "text",
+    "url": "http://localhost/data/example.csv",
+  },
+]
+`;
+
+exports[`DataSourceClient when updateDataSource() is called with a valid name and is successful then the promise is resolved 1`] = `
+Object {
+  "id": "ds2",
+  "method": "get",
+  "name": "Data source 2",
+  "type": "text",
+  "url": "http://localhost/data/example.csv",
+}
+`;

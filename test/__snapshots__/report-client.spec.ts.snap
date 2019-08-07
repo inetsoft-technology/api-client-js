@@ -1,0 +1,152 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ReportClient when deployReport() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "alias": "Report 4",
+  "bursting": false,
+  "cycle": null,
+  "data": "AQAAAAIAAAADAAAABAAAAA==",
+  "description": "A test report",
+  "exportFormats": Array [
+    "PDF",
+    "EXCEL",
+  ],
+  "folder": "folder2",
+  "name": "report4",
+  "overwrite": true,
+  "parameters": Array [
+    Object {
+      "dataType": "string",
+      "name": "param1",
+      "type": "CREATE",
+      "value": "value1",
+    },
+  ],
+  "permissions": Array [
+    Object {
+      "actions": Array [
+        "READ",
+        "WRITE",
+        "DELETE",
+        "ADMIN",
+      ],
+      "name": "admin",
+      "type": "USER",
+    },
+  ],
+  "pregenerated": false,
+  "visible": true,
+}
+`;
+
+exports[`ReportClient when executeReport() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "parameters": Object {
+    "p1": "v1",
+    "p2": 1,
+  },
+}
+`;
+
+exports[`ReportClient when getOpenReports() is called then a list of reports is returned 1`] = `
+Array [
+  Object {
+    "identifier": "id1",
+    "label": "Folder/Report 1",
+    "path": "folder/report1",
+  },
+  Object {
+    "identifier": "id2",
+    "label": "Folder/Report 2",
+    "path": "folder/report2",
+  },
+]
+`;
+
+exports[`ReportClient when getOpenedReport() is called then the opened report is returned 1`] = `
+Object {
+  "identifier": "id1",
+  "label": "Folder/Report 1",
+  "path": "folder/report1",
+}
+`;
+
+exports[`ReportClient when getReports() is called then a list of reports is returned 1`] = `
+Array [
+  Object {
+    "label": "Folder/Report 1",
+    "path": "folder/report1",
+  },
+  Object {
+    "label": "Folder/Report 2",
+    "path": "folder/report2",
+  },
+  Object {
+    "label": "Folder/Report 3",
+    "path": "folder/report3",
+  },
+]
+`;
+
+exports[`ReportClient when mailReport() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "format": "PDF",
+  "message": "This is a test email.",
+  "recipients": Array [
+    "joe@example.com",
+    "sue@example.com",
+  ],
+  "sender": "ann@example.com",
+  "subject": "Test Mail",
+}
+`;
+
+exports[`ReportClient when openReport() is called and execute is false then the adapter is called with the correct arguments 1`] = `
+Object {
+  "identifier": "id1",
+  "label": "Folder/Report 1",
+  "path": "folder/report1",
+}
+`;
+
+exports[`ReportClient when openReport() is called and execute is false then the adapter is called with the correct arguments 2`] = `
+Object {
+  "execute": false,
+  "parameters": Object {
+    "p1": "v1",
+    "p2": 1,
+  },
+  "path": "folder/report1",
+}
+`;
+
+exports[`ReportClient when openReport() is called and execute is true then the adapter is called with the correct arguments 1`] = `
+Object {
+  "identifier": "id1",
+  "label": "Folder/Report 1",
+  "path": "folder/report1",
+}
+`;
+
+exports[`ReportClient when openReport() is called and execute is true then the adapter is called with the correct arguments 2`] = `
+Object {
+  "execute": true,
+  "parameters": Object {
+    "p1": "v1",
+    "p2": 1,
+  },
+  "path": "folder/report1",
+}
+`;
+
+exports[`ReportClient when printReport() is called then the adapter is called with the correct arguments 1`] = `
+Object {
+  "pages": Array [
+    1,
+    2,
+    3,
+    4,
+  ],
+  "printer": "Test Printer",
+}
+`;
