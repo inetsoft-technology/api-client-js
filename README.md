@@ -5,6 +5,8 @@ This library provides a client for the InetSoft web API.
 [![Build Status](https://travis-ci.com/inetsoft-technology/api-client-js.svg?branch=master)](https://travis-ci.com/inetsoft-technology/api-client-js)
 [![Coverage Status](https://coveralls.io/repos/github/inetsoft-technology/api-client-js/badge.svg?branch=master)](https://coveralls.io/github/inetsoft-technology/api-client-js?branch=master)
 [![Known Vulnerabilities](https://snyk.io/test/github/inetsoft-technology/api-client-js/badge.svg)](https://snyk.io/test/github/inetsoft-technology/api-client.js)
+[![npm version](http://img.shields.io/npm/v/@inetsoft/api-client.svg?style=flat)](https://npmjs.org/package/@inetsoft/api-client "View this project on npm")
+[![Apache license](http://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/apache-2.0)
 
 ## Installation
 
