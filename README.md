@@ -2,6 +2,9 @@
 
 This library provides a client for the InetSoft web API.
 
+[![Build Status](https://travis-ci.com/inetsoft-technology/api-client-js.svg?branch=master)](https://travis-ci.com/inetsoft-technology/api-client-js)
+[![Coverage Status](https://coveralls.io/repos/github/inetsoft-technology/api-client-js/badge.svg?branch=master)](https://coveralls.io/github/inetsoft-technology/api-client-js?branch=master)
+
 ## Installation
 
 ```bash
